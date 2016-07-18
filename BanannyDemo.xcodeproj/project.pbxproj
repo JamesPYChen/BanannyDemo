@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532079031D3C73AA00B1ADF2 /* SegmentControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532079021D3C73AA00B1ADF2 /* SegmentControlViewController.swift */; };
+		532079051D3CC50000B1ADF2 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532079041D3CC50000B1ADF2 /* BasicViewController.swift */; };
 		9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25995C1D377ACA0064C105 /* AppDelegate.swift */; };
 		9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25995E1D377ACA0064C105 /* ViewController.swift */; };
 		9F2599621D377ACA0064C105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599601D377ACA0064C105 /* Main.storyboard */; };
 		9F2599641D377ACA0064C105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599631D377ACA0064C105 /* Assets.xcassets */; };
 		9F2599671D377ACA0064C105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599651D377ACA0064C105 /* LaunchScreen.storyboard */; };
 		9F2599701D377DAE0064C105 /* loginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F25996E1D377DAE0064C105 /* loginView.storyboard */; };
+		CC67FEA8456108DB6B1F71CB /* Pods_BanannyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E8621A35A2C553F5396F6B /* Pods_BanannyDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35CA9402F8F0E56CE23BE848 /* Pods-BanannyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanannyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BanannyDemo/Pods-BanannyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		532079021D3C73AA00B1ADF2 /* SegmentControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentControlViewController.swift; sourceTree = "<group>"; };
+		532079041D3CC50000B1ADF2 /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		75E8621A35A2C553F5396F6B /* Pods_BanannyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanannyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2599591D377ACA0064C105 /* BanannyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanannyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F25995C1D377ACA0064C105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F25995E1D377ACA0064C105 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		9F2599661D377ACA0064C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F2599681D377ACA0064C105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F25996F1D377DAE0064C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/loginView.storyboard; sourceTree = "<group>"; };
+		AE0D22C097844F9532CD8D44 /* Pods-BanannyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanannyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BanannyDemo/Pods-BanannyDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC67FEA8456108DB6B1F71CB /* Pods_BanannyDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				9F25995B1D377ACA0064C105 /* BanannyDemo */,
 				9F25995A1D377ACA0064C105 /* Products */,
+				BF76EB7C4013B71365580A29 /* Pods */,
+				DDBEDAF7A1FEFEC540F5883A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +67,7 @@
 		9F25995B1D377ACA0064C105 /* BanannyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				532079021D3C73AA00B1ADF2 /* SegmentControlViewController.swift */,
 				9F25995C1D377ACA0064C105 /* AppDelegate.swift */,
 				9F25995E1D377ACA0064C105 /* ViewController.swift */,
 				9F2599601D377ACA0064C105 /* Main.storyboard */,
@@ -63,8 +75,26 @@
 				9F2599631D377ACA0064C105 /* Assets.xcassets */,
 				9F2599651D377ACA0064C105 /* LaunchScreen.storyboard */,
 				9F2599681D377ACA0064C105 /* Info.plist */,
+				532079041D3CC50000B1ADF2 /* BasicViewController.swift */,
 			);
 			path = BanannyDemo;
+			sourceTree = "<group>";
+		};
+		BF76EB7C4013B71365580A29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35CA9402F8F0E56CE23BE848 /* Pods-BanannyDemo.debug.xcconfig */,
+				AE0D22C097844F9532CD8D44 /* Pods-BanannyDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDBEDAF7A1FEFEC540F5883A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75E8621A35A2C553F5396F6B /* Pods_BanannyDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F25996B1D377ACA0064C105 /* Build configuration list for PBXNativeTarget "BanannyDemo" */;
 			buildPhases = (
+				B2EAAF2D4E7D601A7EA20B0F /* Check Pods Manifest.lock */,
 				9F2599551D377ACA0064C105 /* Sources */,
 				9F2599561D377ACA0064C105 /* Frameworks */,
 				9F2599571D377ACA0064C105 /* Resources */,
+				01BDCF92A783BCD8DAD3E455 /* Embed Pods Frameworks */,
+				C62C372547428FA2D8E9F130 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,13 +167,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01BDCF92A783BCD8DAD3E455 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BanannyDemo/Pods-BanannyDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2EAAF2D4E7D601A7EA20B0F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C62C372547428FA2D8E9F130 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BanannyDemo/Pods-BanannyDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F2599551D377ACA0064C105 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */,
+				532079051D3CC50000B1ADF2 /* BasicViewController.swift in Sources */,
 				9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */,
+				532079031D3C73AA00B1ADF2 /* SegmentControlViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +342,7 @@
 		};
 		9F25996C1D377ACA0064C105 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35CA9402F8F0E56CE23BE848 /* Pods-BanannyDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BanannyDemo/Info.plist;
@@ -270,6 +354,7 @@
 		};
 		9F25996D1D377ACA0064C105 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0D22C097844F9532CD8D44 /* Pods-BanannyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BanannyDemo/Info.plist;
@@ -298,6 +383,7 @@
 				9F25996D1D377ACA0064C105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

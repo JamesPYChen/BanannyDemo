@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="1274" y="715"/>
         </scene>
-        <!--loginView-->
+        <!--vc2-->
         <scene sceneID="Djo-s5-OhZ">
             <objects>
-                <viewControllerPlaceholder storyboardName="loginView" id="JkX-Nn-scK" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="loginView" referencedIdentifier="vc2" id="JkX-Nn-scK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Hd-PK-ilb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1282" y="1580"/>
