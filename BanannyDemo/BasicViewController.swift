@@ -8,8 +8,11 @@
 
 import UIKit
 
-class BasicViewController: UITableViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class BasicViewController:UITableViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
+//    let imageCellIdenterfier = "specialcell"
+    
+
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func takePhotoPressed(sender: AnyObject) {
@@ -42,7 +45,7 @@ class BasicViewController: UITableViewController,UIImagePickerControllerDelegate
         
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
         
-        self.presentViewController(actionSheet, animated: true, completion: nil)
+//        self.presentViewController(actionSheet, animated: true, completion: nil)
         
         
         
@@ -52,6 +55,12 @@ class BasicViewController: UITableViewController,UIImagePickerControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+//        self.tableViewList.registerNib(UINib(nibName: "SpecialTableViewCell", bundle: nil), forCellReuseIdentifier: imageCellIdenterfier)
+        
+//        tableViewList.dataSource = self
+//        tableViewList.delegate = self
+//        tableViewList.reloadData()
         
         self.imageView.contentMode = .ScaleAspectFit
     }
@@ -68,6 +77,39 @@ class BasicViewController: UITableViewController,UIImagePickerControllerDelegate
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
 
+//    // MARK: - Table view data source
+//    
+//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 1
+//    }
+//    
+//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        
+//        
+//        
+//        return 12
+//    }
+//
+//    
+//    
+//    
+//    
+//     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        
+//        let cell = tableView.dequeueReusableCellWithIdentifier(imageCellIdenterfier, forIndexPath: indexPath) as! SpecialTableViewCell
+//        
+//        
+//        cell.CellLabel.text = String(Login.loginNames[indexPath.row].name)
+//        
+//        
+//        
+//        return cell
+//        
+//        
+//    }
+
+    
     
     
     

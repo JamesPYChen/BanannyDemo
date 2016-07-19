@@ -22,6 +22,7 @@ class SegmentControlViewController: UIViewController {
         customControl.titles = ["我是父母", "我是保姆"]
         customControl.addTarget(self, action: #selector(SegmentControlViewController.ControlValueChanged(_:)), forControlEvents: .ValueChanged)
         self.babysitterLoginView.alpha = 0
+        self.parentsLoginView.alpha = 1
         
         
         

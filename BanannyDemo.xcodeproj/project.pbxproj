@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		532079031D3C73AA00B1ADF2 /* SegmentControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532079021D3C73AA00B1ADF2 /* SegmentControlViewController.swift */; };
 		532079051D3CC50000B1ADF2 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532079041D3CC50000B1ADF2 /* BasicViewController.swift */; };
+		532079071D3CE29700B1ADF2 /* SpecialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532079061D3CE29700B1ADF2 /* SpecialTableViewCell.xib */; };
+		532079091D3CE88C00B1ADF2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532079081D3CE88C00B1ADF2 /* Login.swift */; };
+		5320790B1D3CEC3A00B1ADF2 /* SpecialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5320790A1D3CEC3A00B1ADF2 /* SpecialTableViewCell.swift */; };
 		9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25995C1D377ACA0064C105 /* AppDelegate.swift */; };
 		9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25995E1D377ACA0064C105 /* ViewController.swift */; };
 		9F2599621D377ACA0064C105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599601D377ACA0064C105 /* Main.storyboard */; };
@@ -22,6 +25,9 @@
 		35CA9402F8F0E56CE23BE848 /* Pods-BanannyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanannyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BanannyDemo/Pods-BanannyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		532079021D3C73AA00B1ADF2 /* SegmentControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentControlViewController.swift; sourceTree = "<group>"; };
 		532079041D3CC50000B1ADF2 /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		532079061D3CE29700B1ADF2 /* SpecialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecialTableViewCell.xib; sourceTree = "<group>"; };
+		532079081D3CE88C00B1ADF2 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		5320790A1D3CEC3A00B1ADF2 /* SpecialTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialTableViewCell.swift; sourceTree = "<group>"; };
 		75E8621A35A2C553F5396F6B /* Pods_BanannyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanannyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2599591D377ACA0064C105 /* BanannyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanannyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F25995C1D377ACA0064C105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,9 @@
 				9F2599651D377ACA0064C105 /* LaunchScreen.storyboard */,
 				9F2599681D377ACA0064C105 /* Info.plist */,
 				532079041D3CC50000B1ADF2 /* BasicViewController.swift */,
+				532079081D3CE88C00B1ADF2 /* Login.swift */,
+				5320790A1D3CEC3A00B1ADF2 /* SpecialTableViewCell.swift */,
+				532079061D3CE29700B1ADF2 /* SpecialTableViewCell.xib */,
 			);
 			path = BanannyDemo;
 			sourceTree = "<group>";
@@ -162,6 +171,7 @@
 				9F2599641D377ACA0064C105 /* Assets.xcassets in Resources */,
 				9F2599621D377ACA0064C105 /* Main.storyboard in Resources */,
 				9F2599701D377DAE0064C105 /* loginView.storyboard in Resources */,
+				532079071D3CE29700B1ADF2 /* SpecialTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,9 +231,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */,
+				5320790B1D3CEC3A00B1ADF2 /* SpecialTableViewCell.swift in Sources */,
 				532079051D3CC50000B1ADF2 /* BasicViewController.swift in Sources */,
 				9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */,
 				532079031D3C73AA00B1ADF2 /* SegmentControlViewController.swift in Sources */,
+				532079091D3CE88C00B1ADF2 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
