@@ -12,6 +12,9 @@
 		532079071D3CE29700B1ADF2 /* SpecialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532079061D3CE29700B1ADF2 /* SpecialTableViewCell.xib */; };
 		532079091D3CE88C00B1ADF2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532079081D3CE88C00B1ADF2 /* Login.swift */; };
 		5320790B1D3CEC3A00B1ADF2 /* SpecialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5320790A1D3CEC3A00B1ADF2 /* SpecialTableViewCell.swift */; };
+		53CD16A51D3E2D8800617866 /* ViewPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD16A41D3E2D8800617866 /* ViewPhoto.swift */; };
+		53CD16A71D3E2D9B00617866 /* PhotoAlbumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD16A61D3E2D9B00617866 /* PhotoAlbumController.swift */; };
+		53CD16A91D3E2E5A00617866 /* PhotoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD16A81D3E2E5A00617866 /* PhotoThumbnail.swift */; };
 		9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25995C1D377ACA0064C105 /* AppDelegate.swift */; };
 		9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25995E1D377ACA0064C105 /* ViewController.swift */; };
 		9F2599621D377ACA0064C105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599601D377ACA0064C105 /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 		532079061D3CE29700B1ADF2 /* SpecialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecialTableViewCell.xib; sourceTree = "<group>"; };
 		532079081D3CE88C00B1ADF2 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		5320790A1D3CEC3A00B1ADF2 /* SpecialTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialTableViewCell.swift; sourceTree = "<group>"; };
+		53CD16A41D3E2D8800617866 /* ViewPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPhoto.swift; sourceTree = "<group>"; };
+		53CD16A61D3E2D9B00617866 /* PhotoAlbumController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumController.swift; sourceTree = "<group>"; };
+		53CD16A81D3E2E5A00617866 /* PhotoThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoThumbnail.swift; sourceTree = "<group>"; };
 		75E8621A35A2C553F5396F6B /* Pods_BanannyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanannyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2599591D377ACA0064C105 /* BanannyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanannyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F25995C1D377ACA0064C105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,11 +82,14 @@
 				532079021D3C73AA00B1ADF2 /* SegmentControlViewController.swift */,
 				9F25995C1D377ACA0064C105 /* AppDelegate.swift */,
 				9F25995E1D377ACA0064C105 /* ViewController.swift */,
+				53CD16A81D3E2E5A00617866 /* PhotoThumbnail.swift */,
 				9F2599601D377ACA0064C105 /* Main.storyboard */,
 				9F25996E1D377DAE0064C105 /* loginView.storyboard */,
 				9F2599631D377ACA0064C105 /* Assets.xcassets */,
 				9F2599651D377ACA0064C105 /* LaunchScreen.storyboard */,
 				9F2599681D377ACA0064C105 /* Info.plist */,
+				53CD16A41D3E2D8800617866 /* ViewPhoto.swift */,
+				53CD16A61D3E2D9B00617866 /* PhotoAlbumController.swift */,
 				532079041D3CC50000B1ADF2 /* BasicViewController.swift */,
 				532079081D3CE88C00B1ADF2 /* Login.swift */,
 				5320790A1D3CEC3A00B1ADF2 /* SpecialTableViewCell.swift */,
@@ -234,7 +243,10 @@
 				5320790B1D3CEC3A00B1ADF2 /* SpecialTableViewCell.swift in Sources */,
 				532079051D3CC50000B1ADF2 /* BasicViewController.swift in Sources */,
 				9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */,
+				53CD16A71D3E2D9B00617866 /* PhotoAlbumController.swift in Sources */,
+				53CD16A51D3E2D8800617866 /* ViewPhoto.swift in Sources */,
 				532079031D3C73AA00B1ADF2 /* SegmentControlViewController.swift in Sources */,
+				53CD16A91D3E2E5A00617866 /* PhotoThumbnail.swift in Sources */,
 				532079091D3CE88C00B1ADF2 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

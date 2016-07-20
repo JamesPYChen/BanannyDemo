@@ -45,7 +45,7 @@ class BasicViewController:UITableViewController,UIImagePickerControllerDelegate,
         
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
         
-//        self.presentViewController(actionSheet, animated: true, completion: nil)
+        self.presentViewController(actionSheet, animated: true, completion: nil)
         
         
         
@@ -76,6 +76,33 @@ class BasicViewController:UITableViewController,UIImagePickerControllerDelegate,
         imagePicker.delegate = self
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
+    
+    
+    // MARK: - UIImagePickerControllerDelegate
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        print("info \(info)")
+        
+        // Put image to image view
+        let image : UIImage = info[UIImagePickerControllerEditedImage] as! UIImage
+        self.imageView.image = image
+        
+        // Turn back ground color to black to present image clearer
+        self.imageView.backgroundColor = UIColor.blackColor()
+        
+        // Save photo into photos album
+        if picker.sourceType == .Camera {
+            // Save to photo album
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            
+            
+        }
+        
+        
+        // Close picker view controller
+        self.dismissViewControllerAnimated(true, completion: nil)
+
 
 //    // MARK: - Table view data source
 //    
@@ -113,4 +140,5 @@ class BasicViewController:UITableViewController,UIImagePickerControllerDelegate,
     
     
     
+}
 }

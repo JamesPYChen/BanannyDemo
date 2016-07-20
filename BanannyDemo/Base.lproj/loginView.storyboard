@@ -139,7 +139,7 @@
                                                         <action selector="takePhotoPressed:" destination="Gfc-kI-mB0" eventType="touchUpInside" id="oOC-5Y-8nk"/>
                                                     </connections>
                                                 </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ulf-fw-Mwr">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Ulf-fw-Mwr">
                                                     <rect key="frame" x="15" y="21" width="140" height="134"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="140" id="qLL-o8-0es"/>
@@ -403,5 +403,152 @@
             </objects>
             <point key="canvasLocation" x="325" y="-145.5"/>
         </scene>
+        <!--Photo Album-->
+        <scene sceneID="Q4W-Wt-vZv">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="jTj-Xr-GcI" customClass="PhotoAlbumController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Vb-OK-mc0"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3k-dF-Gcz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="esw-44-CWG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kgc-Oa-no5">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="G8b-bw-6kc">
+                                    <size key="itemSize" width="105" height="105"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="lzY-dj-fhr" customClass="PhotoThumbnail" customModule="BanannyDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u4M-Iq-5ob">
+                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="105" height="105"/>
+                                        <connections>
+                                            <outlet property="imgView" destination="u4M-Iq-5ob" id="r5e-VW-nwB"/>
+                                            <segue destination="8Gy-a8-LG8" kind="show" identifier="viewLargePhoto" id="gMg-ay-YJw">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="jTj-Xr-GcI" id="8GL-wL-AN1"/>
+                                    <outlet property="delegate" destination="jTj-Xr-GcI" id="9J8-Ue-Y6t"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="organize" id="Rg5-m0-nXo">
+                            <connections>
+                                <action selector="btnPhotoAlbum:" destination="jTj-Xr-GcI" id="Chu-ak-zbd"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Photo Album" id="ccR-pu-eji">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="ZCe-6t-uzy">
+                            <connections>
+                                <action selector="btnCamera:" destination="jTj-Xr-GcI" id="88w-Ho-uco"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="Kgc-Oa-no5" id="JgD-dr-eFA"/>
+                        <outlet property="contentLayout" destination="G8b-bw-6kc" id="Bfa-dN-OYg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MCZ-P6-c5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1698" y="-909"/>
+        </scene>
+        <!--Full-Sized Image-->
+        <scene sceneID="9vd-71-R7U">
+            <objects>
+                <viewController id="8Gy-a8-LG8" customClass="ViewPhoto" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bhp-vU-7Vg"/>
+                        <viewControllerLayoutGuide type="bottom" id="hYA-2K-bMn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3bd-Dh-5FM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nqH-vr-DAg">
+                                <rect key="frame" x="0.0" y="5" width="600" height="551"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="action" id="fWY-C7-cvv">
+                            <connections>
+                                <action selector="btnExport:" destination="8Gy-a8-LG8" id="2CL-xE-Dak"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="3ws-DC-sTD"/>
+                        <barButtonItem systemItem="trash" id="Lqh-rs-iAe">
+                            <connections>
+                                <action selector="btnTrash:" destination="8Gy-a8-LG8" id="KiO-yh-YQm"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Full-Sized Image" id="B91-1a-mri">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="VUt-Ff-dXB">
+                            <connections>
+                                <action selector="btnCancel:" destination="8Gy-a8-LG8" id="cw5-Rf-QGb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imgView" destination="nqH-vr-DAg" id="tg4-n6-qRI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vQ-ZI-ZPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2382" y="-901"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="exL-sW-jcg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="vAc-Kw-6gr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="erm-ks-I1A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="p6N-fl-YWZ">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="jTj-Xr-GcI" kind="relationship" relationship="rootViewController" id="rzD-vC-FWa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ES-Et-5RM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="-909"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="profile" width="100" height="100"/>
+    </resources>
 </document>
